@@ -4,10 +4,6 @@ import java.io.Serializable;
 import javax.persistence.*;
 
 
-/**
- * The persistent class for the message database table.
- * 
- */
 @Entity
 @NamedQuery(name="Message.findAll", query="SELECT m FROM Message m")
 public class Message implements Serializable {
